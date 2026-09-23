@@ -1,0 +1,49 @@
+# ============================================================
+# iOS 27 Apple Intelligence / Siri AI
+# Apple official + HaGeZi Private Relay + observed extensions
+# Generated: 2026-09-23
+#
+# Intended for Surge RULE-SET usage.
+# Route the entire ruleset to one supported-region proxy policy
+# (for example, a stable US node/policy group).
+# ============================================================
+
+# --- Siri / Search ---
+DOMAIN,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,api-siri-prod.apple.com
+DOMAIN,seed.siri.apple.com
+
+# --- Private Cloud Compute ---
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,cp4.cloudflare.com
+
+# --- PCC / Relay extensions ---
+DOMAIN,apple-relay.akamaized.net
+DOMAIN,apple-relay.mask.apple-dns.net
+DOMAIN,apple-carry-relay.cloudflare.com
+
+# --- Apple Intelligence / Privacy Proxy API ---
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask-api.fe2.apple-dns.net
+
+# --- Private Relay bootstrap ---
+DOMAIN,mask.apple-dns.net
+DOMAIN,africa-mask.wrr.mask.apple-dns.net
+DOMAIN,apac-mask.wrr.mask.apple-dns.net
+DOMAIN,canary.mask.apple-dns.net
+DOMAIN,emea-mask.wrr.mask.apple-dns.net
+DOMAIN,north-america-mask.wrr.mask.apple-dns.net
+DOMAIN,south-america-mask.wrr.mask.apple-dns.net
+DOMAIN,wrr.mask.apple-dns.net
+DOMAIN,mask.icloud.com
+DOMAIN,mask-h2.icloud.com
+DOMAIN,mask-boot.icloud.com
+DOMAIN,mask-canary.icloud.com
+
+# --- Auxiliary Apple services ---
+DOMAIN,gateway.icloud.com
+DOMAIN,gspe1-ssl.ls.apple.com
