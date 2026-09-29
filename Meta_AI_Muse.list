@@ -1,0 +1,33 @@
+# NAME: Meta_AI_Muse
+# FORMAT: Surge RULE-SET
+# UPDATED: 2026-09-29
+# RULES: 10
+# Scope: Meta AI / Muse domains plus shared Meta services.
+# Shared rules also route matching Facebook and Instagram traffic.
+# Based on verified public sources; not an official or exhaustive allowlist.
+# Sources:
+# https://ruleset.skk.moe/List/non_ip/ai.conf
+# https://muse.ai/join
+# https://rohanadwankar.github.io/posts/sandbox2.html
+# https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list
+#
+# Set the policy on the RULE-SET line in your profile, not in this file.
+# Place before overlapping Facebook/general proxy rules and FINAL.
+
+# Meta AI and Muse, including auth.muse.ai and per-user VM subdomains
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,metaaivm.com
+
+# Meta services, including auth.meta.com and imagine.meta.com
+DOMAIN-SUFFIX,meta.com
+
+# Shared Meta APIs, web services and resources
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+
+# Instagram services and resources
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
